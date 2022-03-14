@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/inpyjamas/schemas/main/render.com.json
+# https://render.com/docs/yaml-spec
+
+services:
+  - name: surabayajs-shortlinks
+    type: web
+    env: static
+    staticPublishPath: .
+    domains:
+      - link.surabayajs.org
+      - subjs.in
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, s-maxage=1, stale-while-revalidate=59
+    routes:
+      - type: redirect
+        source: /
+        destination: https://surabayajs.org
+      - type: redirect
+        source: /discord
+        destination: https://discord.gg/kx3qp5S
+      - type: redirect
+        source: /kritiksaran
+        destination: https://airtable.com/shrQhziBrtEmaBFaT
+      - type: redirect
+        source: /meetup
+        destination: https://meet.google.com/qfr-nfxj-zgk
+      - type: redirect
+        source: /meetup16
+        destination: https://youtu.be/xrFBvOYO_WY
+      - type: redirect
+        source: /meetup17
+        destination: https://www.eventbrite.com/e/meetup-17-js-fatigue-frameworks-war-and-data-vizualization-using-nivo-tickets-207158445487
+      - type: redirect
+        source: /vscode
+        destination: https://marketplace.visualstudio.com/items?itemName=surabayajs.surabayajs-extension-pack
+      - type: redirect
+        source: /vscode-json
+        destination: https://raw.githubusercontent.com/surabayajs/surabayajs-extension-pack/master/package.json
