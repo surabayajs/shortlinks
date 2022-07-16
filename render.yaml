@@ -33,6 +33,9 @@ services:
         source: /meetup17
         destination: https://www.eventbrite.com/e/meetup-17-js-fatigue-frameworks-war-and-data-vizualization-using-nivo-tickets-207158445487
       - type: redirect
+        source: /workshop1
+        destination: https://www.eventbrite.com/e/meetup-17-js-fatigue-frameworks-war-and-data-vizualization-using-nivo-tickets-207158445487
+      - type: redirect
         source: /vscode
         destination: https://marketplace.visualstudio.com/items?itemName=surabayajs.surabayajs-extension-pack
       - type: redirect
