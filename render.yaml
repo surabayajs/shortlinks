@@ -36,6 +36,9 @@ services:
         source: /workshop1
         destination: https://www.eventbrite.com/e/chapter-1-javascript-101-tickets-383864788917
       - type: redirect
+        source: /feedback
+        destination: https://forms.gle/FpPwUT4JMnzNwxNp9
+      - type: redirect
         source: /vscode
         destination: https://marketplace.visualstudio.com/items?itemName=surabayajs.surabayajs-extension-pack
       - type: redirect
