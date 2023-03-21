@@ -1,8 +1,7 @@
 # shortlinks
 
-Redirect service using [Render redirects and rewrites](https://render.com/docs/redirects-rewrites)
+Redirect service using [Netlify](https://docs.netlify.com/routing/redirects/)
 
 ## Domains
 
 - [link.surabayajs.org](https://link.surabayajs.org)
-- [subjs.in](https://subjs.in)
